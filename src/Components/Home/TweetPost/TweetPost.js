@@ -8,7 +8,7 @@ const TweetPost = () => {
 
   const onSubmit = (data) => {
     data.name = "Tom Cruise";
-    fetch("http://localhost:5000/addPost", {
+    fetch("https://boiling-mountain-91364.herokuapp.com/addPost", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
